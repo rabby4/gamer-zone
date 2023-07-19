@@ -4,11 +4,14 @@
     padding: 0;
     box-sizing: border-box;
 }
+.hide{
+    display: none;
+}
 body{
     font-family: 'Work Sans', sans-serif;
 }
 .fixed-width{
-    width: 1200px;
+    max-width: 1200px;
 }
 p{
     color: #534C64;
@@ -176,7 +179,7 @@ p.gamer-quotation {
 }
 /* We are gamer section style end here  */
 
-/* Online Games style start here  */
+/* Online Games videos style start here  */
 .video-container{
     margin: auto;
     padding: 100px 0px;
@@ -196,22 +199,131 @@ h1.video-title {
 .video-box img {
     width: 100%;
 }
+/* Online Games videos style end here  */
 
-/* Online Games style end here  */
 
 
+/* Play instantly section start here */
+.play-container,
+.play-games-container {
+    margin: auto;
+    gap: 200px;
+    align-items: start;
+}
+.play-content, 
+.play-img,
+.play-games-content,
+.play-games-img {
+    width: 50%;
+}
+.play-content{
+    text-align: right;
+    margin-top: 180px;
+}
+.play-content h1, 
+.play-games-content h1{
+    font-size: 2.8rem;
+}
+p.play-text {
+    padding-left: 150px;
+    line-height: 25px;
+    margin: 20px 0px;
+}
+.play-img img:first-child{
+    width: 100%;
+}
+.play-img img:last-child {
+    position: relative;
+    left: -140px;
+    bottom: 220px;
+}
+/* Play instantly section end here */
+/* Play games css style start here  */
+.play-games-text{
+    padding-right: 50px;
+    line-height: 25px;
+    margin: 20px 0px;
+}
+.play-games-img img:first-child{
+    width: 100%;
+}
+.play-games-img img:last-child {
+    position: relative;
+    right: -310px;
+    bottom: 220px;
+    width: 55%;
+}
+.play-games-content{
+    margin-top: 180px;
+}
+
+/* Play games css style end here  */
+
+
+
+
+/* Game type css style start here  */
+.games-type-container{
+    margin: auto;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+.game-box{
+    justify-content: center;
+    align-items: center;
+    border: 1px solid transparent;
+    border-radius: 35px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+.game-box h6 {
+    font-size: .8rem;
+}
+.game-box:hover{
+    border: 1px solid #FF42A5;
+    border-radius: 35px;
+
+}
+.game-box:hover h6{
+    color: #FF42A5;
+}
+.game-box img {
+    width: 50px;
+    margin-right: 15px;
+}
+
+
+/* Game type css style end here  */
+
+
+/* Footer style start here  */
+.footer-container{
+    margin: auto;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+.footer-logo{
+    justify-content: center;
+}
+
+
+/* Footer style end here  */
 
 
 /* Responsive design start from here  */
 
 /* Mobile Responsive Design  */
 @media screen and (max-width: 576px) {
-
+/* headre responsive design */
     header{
         box-shadow: none
     }
     nav,
-    .menu-item {
+    .menu-item,
+    .gamer-container,
+    .play-container {
         flex-direction: column;
     }
     .logo-container,
@@ -219,21 +331,28 @@ h1.video-title {
         margin-bottom: 30px;
     }
 
-
+/* banner responsive design */
     .banner, 
     .gamer{
         background: none;
     }
-    .banner-container{
+    .banner-container,
+    .play-games-container{
         flex-direction: column-reverse;
+    }
+    .banner-content, .banner-img {
+        width: 90%;
     }
     .banner-content{
         background-image: url(images/shape-bg.png);
-        padding: 100px;
+        background-size: contain;
+        padding: 20px;
     }
 
-    .gamer-container{
-        flex-direction: column;
+/* gamer section responsive design */
+    .gamer-img,
+    .gamer-content{
+        width: 85%;
     }
     .gamer-content{
         text-align: center;
@@ -242,15 +361,17 @@ h1.video-title {
         margin-top: 40px;
     }
 
+/* Video section responsive design */
+    .video-container{
+        width: 85%;
+    }
     .all-videos{
-        width: 50%;
         margin: auto;
         grid-template-columns: 1fr;
         justify-content: center;
         gap: 70px;
     }
     .video-box p {
-        font-size: 20px;
         margin-top: 25px;
         text-align: center;
         font-weight: 500;
@@ -258,7 +379,82 @@ h1.video-title {
     .video-content {
         margin-bottom: 80px;
     }
+
+
+/* play content responsive design */
+    .play-container,
+    .play-games-container{
+        gap: 20px;
+    }
+    .play-content, 
+    .play-img,
+    .play-games-content,
+    .play-games-img{
+        margin: auto;
+        width: 90%;
+        text-align: center;
+    }
+    .play-content{
+
+    }
+    .play-content p,
+    .play-games-text{
+        padding: 10px 20px;
+    }
+    .play-img img:first-child{
+        width: 75%;
+    }
+    .play-img img:last-child {
+        width: 45%;
+        position: relative;
+        left: -115px;
+        bottom: 120px;
+    }
+
+
+    .play-games-img img:first-child{
+        width: 75%;
+    }
+    .play-games-img img:last-child {
+        width: 45%;
+        position: relative;
+        right: -115px;
+        bottom: 120px;
+    }
+
+/* games type section responsive design */
+    .games-type-container{
+        width: 100%;
+        gap: 10px;
+    }
+    .game-box{
+        padding: 5px 5px;
+
+    }
+    .game-box h6 {
+        font-size: .5rem;
+    }
+    .game-box img {
+        width: 35px;
+        margin-right: 5px;
+    }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* Tablet Responsive Design  */
 @media screen and (min-width: 577px) and (max-width: 992px) {
