@@ -500,7 +500,11 @@ footer{
         text-align: center;
     }
     p.gamer-purpose {
+        font-size: 1.1rem;
         margin-top: 40px;
+    }
+    p.gamer-quotation{
+        font-size: 1.3rem;
     }
 
 /* Video section responsive design */
@@ -619,12 +623,15 @@ footer{
 
 /* Tablet Responsive Design  */
 @media screen and (min-width: 577px) and (max-width: 992px) {
-
+    /* header responsive design */
     header{
         box-shadow: none
     }
     nav,
-    .menu-item {
+    .menu-item,
+    .gamer-container,
+    .play-container,
+    .careers-container {
         flex-direction: column;
     }
     .logo-container,
@@ -632,6 +639,20 @@ footer{
         margin-bottom: 30px;
     }
 
+    /* banner responsive design */
+    .banner-container,
+    .play-games-container{
+        flex-direction: column-reverse;
+    }
+    .banner-content, .banner-img {
+        width: 90%;
+    }
+    .banner-content{
+        background-image: url(images/shape-bg.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        padding: 60px;
+    }
      .banner,
      .gamer{
         background: none;
@@ -640,8 +661,89 @@ footer{
     .gamer-container{
         padding: 0px 50px;
     }
-    /* .banner-content{
-        background-image: url(images/shape-bg.png);
-        padding: 100px;
-    } */
+
+    /* gamer section responsive design */
+    .gamer-img,
+    .gamer-content{
+        width: 85%;
+    }
+
+    /* Video section responsive design */
+    .video-container{
+        width: 80%;
+    }
+    .all-videos {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* play content responsive design */
+    .play-container,
+    .play-games-container{
+        gap: 20px;
+    }
+    .play-content, 
+    .play-img,
+    .play-games-content,
+    .play-games-img{
+        margin: auto;
+        width: 90%;
+        text-align: center;
+    }
+    .play-content h1, 
+    .play-games-content h1{
+        font-size: 2rem;
+}
+    .play-content p,
+    .play-games-text{
+        padding: 10px 20px;
+    }
+    .play-img img:first-child{
+        width: 75%;
+    }
+    .play-img img:last-child {
+        width: 45%;
+        position: relative;
+        left: -180px;
+        bottom: 215px;
+    }
+    .play-games-img img:first-child{
+        width: 75%;
+    }
+    .play-games-img img:last-child {
+        width: 45%;
+        position: relative;
+        right: -185px;
+        bottom: 215px;
+    }
+
+    /* Careers responsive design for Tablet here  */
+    .careers{
+        background-image: none;
+    }
+    .careers-content, .careers-img {
+        width: 80%;
+    }
+    .careers-title {
+        font-size: 2rem;
+    }
+    .skill-list ul li, .careers-list ul li{
+        font-size: .8rem;
+    }
+    .careers-img {
+        background-image: url(images/Vector\ 2.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 20px;
+    }
+
+    /* footer section responsive design for tablet */
+    .condition-menu ul, 
+    .footer-menu ul{
+        flex-wrap: wrap;
+        row-gap: 40px;
+    }
+    .social-icon {
+        padding: 0px 50px;
+        row-gap: 50px;
+    }
 }
