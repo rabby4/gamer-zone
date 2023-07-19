@@ -292,17 +292,72 @@ p.play-text {
 }
 
 /* Play games css style end here  */
-
+/* Careers style start here  */
+.careers{
+    background-color: #FF42A5;
+    background-image: url(images/Vector\ 2.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: inherit;
+    padding: 100px 0px;
+}
+.careers-container{
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+.careers-content, .careers-img{
+    width: 50%;
+}
+h1.careers-title {
+    font-size: 2.8rem;
+    color: #fff;
+    font-weight: 700;
+}
+p.careers-description {
+    color: #fff;
+    font-weight: 300;
+    font-size: 1rem;
+    line-height: 25px;
+    margin: 25px 0px;
+}
+.careers-list{
+    justify-content: space-between;
+    color: #fff;
+}
+.skill-list ul, .careers-list ul{
+    list-style: none;
+}
+.skill-list ul li, .careers-list ul li{
+    margin: 10px 0px;
+}
+.careers-location{
+    text-align: right;
+}
+.careers-button {
+    padding: 17px 36px;
+    border-radius: 35px;
+    border: none;
+    color: #FF42A5;
+    font-size: .8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-top: 35px;
+}
+.careers-img img{
+    width: 100%;
+}
+/* Careers style end here  */
 
 
 
 /* Game type css style start here  */
 .games-type-container{
-    margin: auto;
+    margin: 100px auto;
     justify-content: center;
     flex-wrap: wrap;
     gap: 50px;
-    margin-bottom: 50px;
 }
 .game-box{
     justify-content: center;
@@ -397,7 +452,8 @@ footer{
     nav,
     .menu-item,
     .gamer-container,
-    .play-container {
+    .play-container,
+    .careers-container {
         flex-direction: column;
     }
     .logo-container,
@@ -468,9 +524,7 @@ footer{
         width: 90%;
         text-align: center;
     }
-    .play-content{
 
-    }
     .play-content p,
     .play-games-text{
         padding: 10px 20px;
@@ -495,6 +549,23 @@ footer{
         right: -115px;
         bottom: 120px;
     }
+
+/* Careers responsive here  */
+.careers{
+    background-image: none;
+}
+.careers-content, .careers-img {
+    width: 90%;
+}
+.skill-list ul li, .careers-list ul li{
+    font-size: .8rem;
+}
+.careers-img {
+    background-image: url(images/Vector\ 2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 20px;
+}
 
 /* games type section responsive design */
     .games-type-container{
