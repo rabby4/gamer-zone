@@ -81,6 +81,7 @@ button.nav-btn {
     align-items: center;
     gap: 15px;
     margin-left: 15px;
+    cursor: pointer;
 }
 .nav-btn img {
     width: 23px;
@@ -132,6 +133,7 @@ button.nav-btn {
     border-radius: 35px;
     color: #fff;
     text-transform: uppercase;
+    cursor: pointer;
 }
 .left-btn,
 .gamer-btn {
@@ -350,6 +352,7 @@ p.careers-description {
     font-weight: 600;
     text-transform: uppercase;
     margin-top: 35px;
+    cursor: pointer;
 }
 .careers-img img{
     width: 100%;
